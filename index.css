@@ -50,25 +50,22 @@ body {
     max-width: 1000px;
 }
 
-.img {
-    width: 100%;
-}
-
 .img img {
     width: 100%;
+    height: auto;
 }
 
 .lhs {
     display: grid;
     justify-items: stretch;
-    padding: 1.2rem;
+    padding: 0 2rem;
     color: var(--clr-sec-charcoal-grey);
     font-family: var(--font-family);
     font-size: var(--font-size);
 }
 
 .description h1 {
-    font-size: 4em;
+    font-size: 3.8em;
     margin: 0;
     margin-bottom: 1rem;
     color: var(--clr-sec-dark-grey);
@@ -91,6 +88,7 @@ body {
 
     display: flex;
     align-items: center;
+    color: var(--clr-sec-charcoal-grey);
     gap: 1rem;
 }
 
@@ -113,6 +111,7 @@ body {
 label {
     font-size: 12px;
     font-weight: var(--fw-bold);
+    color: var(--clr-sec-dark-grey);
     margin-bottom: .5rem;
 }
 
@@ -125,8 +124,8 @@ input[type="email"] {
 }
 
 input[type="email"]:focus {
-    outline: 1px solid var(--clr-primary);
-    border: 1px solid var(--clr-primary);
+    outline: 1px solid var(--clr-sec-dark-grey);
+    border: 1px solid var(--clr-sec-dark-grey);
 }
 
 input[type="submit"] {
@@ -149,6 +148,7 @@ input[type="submit"]:hover {
 
 @media screen and (max-width: 500px) {
     .main {
+        background: none;
         width: 100%;
         padding: 0;
     }
@@ -166,6 +166,7 @@ input[type="submit"]:hover {
         order: 1;
         padding: 0 2rem;
         margin-top: 2rem;
+        margin-bottom: 2rem;
     }
 
     .rhs {
@@ -187,6 +188,10 @@ input[type="submit"]:hover {
 
     input[type="email"] {
         margin-bottom: 1.8rem;
+    }
+
+    .sign-up {
+        margin-bottom: 2rem;
     }
 }
 
