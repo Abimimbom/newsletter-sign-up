@@ -128,7 +128,7 @@ input[type="email"]:focus {
     border: 1px solid var(--clr-sec-dark-grey);
 }
 
-input[type="submit"] {
+.btn {
     padding: 1.2rem;
     border-radius: 8px;
     border: none;
@@ -136,13 +136,13 @@ input[type="submit"] {
     color: var(--clr-sec-white);
     font-size: var(--font-size);
     font-weight: var(--fw-bold);
-    transition: .3s all ease-in-out;
 }
 
-input[type="submit"]:hover {
+.btn:hover {
     cursor: pointer;
     background: linear-gradient(200deg, hsl(4, 100%, 67%), hsl(334, 100%, 64%));
     box-shadow: 0 15px 20px 10px hsla(4, 100%, 67%, 0.3);
+    transition: .2s all ease-in-out;
 }
 
 
